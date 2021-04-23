@@ -213,6 +213,7 @@ footer{
 }
 #index main {
 width:750px
+overflow:hidden;
 }
 #index #wrapper {
 grid-template-areas:
