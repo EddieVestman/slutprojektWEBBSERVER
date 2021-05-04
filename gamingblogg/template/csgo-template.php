@@ -8,16 +8,14 @@
   <body id="index">
     <div id="wrapper">
       <header><!--Sidhuvud-->
-            <h1>Gaming Bloggen</h1>
+            <h1>CS:GO</h1>
 			
 		
       </header>
-      <?php 
-				require "menu.php";
-			
-		?>
-      
-			
+      <?php
+			require "menu.php";
+		
+	  ?>			
 			<main> <!--Huvudinnehåll-->
 				
 				Hej och välkommen till gaming bloggen här kan du läsa och publicera egen information om CS:GO eller Valorant. <br> <br>
@@ -32,7 +30,7 @@ Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculu
 Vestibulum mi est, varius ut mi nec, bibendum suscipit urna. Nulla viverra porttitor felis, sit amet sagittis nibh dictum ut. Vivamus pharetra pretium lacus. Aliquam congue quam ultricies, maximus sem et, luctus dolor. Suspendisse bibendum dui vulputate, porttitor ligula ac, sollicitudin orci. Cras vel dolor eu lorem ultricies sagittis. Integer risus ligula, commodo ut turpis sit amet, rhoncus vestibulum purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus vel est nibh. Donec eu malesuada elit, eget volutpat urna. Sed faucibus risus id posuere egestas.			
 			
 			</main>
-			<img src="https://d1fs8ljxwyzba6.cloudfront.net/assets/article/2020/04/09/csgo-to-valorant-sens-converter-header_feature.jpg" alt="picture of games"> 
+			
 			
 			
 			
