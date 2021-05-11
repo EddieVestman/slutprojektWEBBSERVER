@@ -1,5 +1,5 @@
 <?php
-	if(!isset($_SESSION['username'])) {
+	if(!isset($_SESSION['anvnamn'])) {
 		echo<<<NAV
 		<nav><!--Navigationsmeny-->
 			<ul>	
@@ -12,19 +12,33 @@
 		</nav>
 NAV;
 	}
-	else{
-		if($_SESSION['status']==1){
+	elseif ($_SESSION['status']==1){
 			echo<<<NAV
 			<nav>
-				<u1>
+				<ul>
+					<li><a href="index.php">Startsida</a></li>
 					<li><a href="csgo.php">CS:GO</a></li>
-					<li><a href="valorant.php">VALORANT</a></li>
-					<li><a href="login.html">Logga in/registrera</a></li>
-					<li><a href="admin.html">Logga in/registrera</a></li>
+					<li><a href="valorant.php">VALORANT</a></li>		
+					<li><a href="logout.php">Logga ut</a></li>					
 				</ul>
 			</nav>
 NAV;
 			
 		}
-	}
+		
+	elseif($_SESSION['status']==2){
+			echo<<<NAV
+			<nav>
+				<ul>
+					<li><a href="index.php">Startsida</a></li>
+					<li><a href="csgo.php">CS:GO</a></li>
+					<li><a href="valorant.php">VALORANT</a></li>				
+					<li><a href="admin.php">Admin</a></li>
+				</ul>
+			</nav>
+NAV;
+			
+		}
+	
+	
 ?>

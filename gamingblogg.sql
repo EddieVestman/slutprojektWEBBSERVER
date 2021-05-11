@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Värd: 127.0.0.1
--- Tid vid skapande: 04 maj 2021 kl 14:36
+-- Tid vid skapande: 11 maj 2021 kl 14:34
 -- Serverversion: 10.4.6-MariaDB
 -- PHP-version: 7.3.8
 
@@ -40,13 +40,11 @@ CREATE TABLE `anvandare` (
 --
 
 INSERT INTO `anvandare` (`anvnamn`, `epost`, `losenord`, `status`) VALUES
-('David', 'david@gmail.com', '$2y$10$tQmAR27veZwPnk5a4DDueO2QpbaZCiI0OeSClixnMVzrznlOU7W4G', 1),
-('eddan', 'eddie@gmail.com', '$2y$10$9MbmhLBr4pK3W7gvmRGUje.5q9cokxkOUzeO9jReZHTORtbxzVKeq', 1),
-('edddddie', 'gegg@gmail.com', '$2y$10$g57rkoHzTReYjrV05mz7suZQ7VyEe021D5GFznN1GDKXhUb0TmtrC', 1),
-('Eddie', 'edve02001@utb.vaxjo.se', '$2y$10$LgzhwCfoPyp65kUr5XmXw.7ybn/WoriGw8ib.15cM2Z92vuEcen8S', 1),
-('kungen', 'lolman@gmail.com', '$2y$10$k6ipUXd0TufE10a80l5OpOVi3y7wPQHZQmR5ogoQaWYGzrHJEV/jC', 1),
-('lolman', 'lol@gmail.com', '$2y$10$qa2rkxq/3pvjjbiiuoZktuhgvvLZAz..w09GmYvBwVvEWruhGkSDi', 1),
-('ompah', 'ompah25@gmail.com', '$2y$10$yTlGCaPssPym3il.LvIMV.tRS6YQePJbHerH1zyHsdTNOzVeBo9vy', 1);
+('Eddie', 'ompah25@gmail.com', '$2y$10$nbYLhBHb2HSFA7Pea/ISJ.bzWZnb3XYnU9UDVYzw6uyGh8lE5dlSu', 2),
+('eeddde', 'eddie123@gmail.com', '$2y$10$lkVMxXi66qKFT9cTRo8mlOFG.jXB36TREyC09JzseIQWpExIUUMXy', 1),
+('elias', 'elias@gmail.com', '$2y$10$bnNJka57OT3UK2CGHD6AAO/I9K2MikYxrq3DEdWRXp91JGOhNNlDK', 1),
+('gabbbbe', 'gabbe@gmail.com', '$2y$10$FpOKlBipF4iWshMCrobMX.cI7LaV7cUot.BE.JcWl79vtRye/oCce', 1),
+('tjorven', 'tjorven@gmail.com', '$2y$10$NSMONqoxd7wI5/FmQcDC/ep4RHt8j7A6c/5VyMAZA0W7IiGmRjrqW', 1);
 
 --
 -- Index för dumpade tabeller

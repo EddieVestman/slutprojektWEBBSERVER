@@ -1,3 +1,15 @@
+<?php
+	$str="";
+	if(isset($_GET["status"])){
+		if($_GET["status"]==1){
+			$str="Felaktigt användare";
+		}
+		elseif($_GET["status"]==2){
+			$str="Felaktigt lösenord";
+		}
+	}
+?>
+
 <!DOCTYPE html>
 
 <html lang="sv">
@@ -18,11 +30,11 @@
 			
 		?>
 		
-			<main> <!--Huvudinnehåll-->
+			<main> 
 				<section>
-			<form action="" method="post">
+			<form action="../template/login2.php" method="post">
             <p><label for="user">Användarnamn:</label>
-            <input type="text" id="user" name="username"></p>
+            <input type="text" id="user" name="anvnamn"></p>
             <p><label for="pwd">Lösenord:</label>
             <input type="password" id="pwd" name="password"></p>
             <p>
