@@ -16,29 +16,14 @@ require "menu.php";
 		
 ?>
 <main> <!--Huvudinnehåll-->
-<form action="create-template.php" method="post">
-  <fieldset>
-    <div>
-      <label>Rubrik</label>
-      <div>
-        <input type="text" class="form-control" placeholder="Rubrik">
-      </div>
-    </div>
-
-    <div>
-      <label for="textArea">Beskrivning</label>
-      <div>
-        <textarea rows="5" "></textarea>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <div>
-        <button type="reset">Avbryt</button>
-        <button type="submit">Skapa inlägg</button>
-      </div>
-    </div>
-  </fieldset>
-</form>				
+<form action="create2.php" method="post">
+			<div><label for="rubrik">Rubrik</label>
+			<input type="text" id="rubrik" name="rubrik"> </div>
+			
+			<div><label for="beskrivning">Beskrivning:</label>
+			<textarea rows="7" cols="35" id="beskrivning" name="beskrivning"></textarea></div>
+			
+			<input type="submit" value="Skapa inlägg">
+		</form>
 		
 </main>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="sv">
   <head>
@@ -30,7 +31,7 @@ Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculu
 Vestibulum mi est, varius ut mi nec, bibendum suscipit urna. Nulla viverra porttitor felis, sit amet sagittis nibh dictum ut. Vivamus pharetra pretium lacus. Aliquam congue quam ultricies, maximus sem et, luctus dolor. Suspendisse bibendum dui vulputate, porttitor ligula ac, sollicitudin orci. Cras vel dolor eu lorem ultricies sagittis. Integer risus ligula, commodo ut turpis sit amet, rhoncus vestibulum purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus vel est nibh. Donec eu malesuada elit, eget volutpat urna. Sed faucibus risus id posuere egestas.			
 			
 			</main>
-			
+			<a href="create.php">Skapa inlägg</a>
 			
 			
 			

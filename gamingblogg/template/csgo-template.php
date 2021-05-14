@@ -1,3 +1,13 @@
+<?php
+	require "../Includes/connect.php";
+	
+	$sql = "SELECT * FROM inlagg";
+	$res = $dbh -> prepare($sql);
+	$res -> execute();
+	$result = $res -> get_result();
+
+?>
+
 <!DOCTYPE html>
 <html lang="sv">
   <head>
@@ -32,14 +42,27 @@ Vestibulum mi est, varius ut mi nec, bibendum suscipit urna. Nulla viverra portt
 			</main>
 			
 			<div>	
-			<a href="create-template.php">Skapa inlägg</a>
+			<a href="create.php">Skapa inlägg</a>
+			
+		
+		<?php
+		while ($row = $result->fetch_assoc()) {
+                    echo <<<ARTICLE
+                    <article>
+				<h2>{$row['rubrik']}</h2>
+				<p>{$row['beskrivning']}</p>
+				<p>Skriven av: {$row['anv']} || inlägg:{$row['ID']}</p>
+			</article>
+ARTICLE;
+}
 
-			</div>
-							
-						
-			
-			
+
+			?>
+	</div>					
+		
 		</div>
+		
+		
 		<!--Egen fil -->
 		<footer>
 			 © Eddie Vestmans gamingblogg
