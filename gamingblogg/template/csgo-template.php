@@ -55,7 +55,7 @@ Vestibulum mi est, varius ut mi nec, bibendum suscipit urna. Nulla viverra portt
 			</article>
 ARTICLE;
 }
-
+	
 
 			?>
 	</div>					

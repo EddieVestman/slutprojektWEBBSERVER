@@ -1,5 +1,5 @@
 <?php
-	if(!isset($_SESSION['anvnamn'])) {
+	if(!isset($_SESSION['anvnamn'])) { //Om man inte är inloggad ser menyn ut såhär
 		echo<<<NAV
 		<nav><!--Navigationsmeny-->
 			<ul>	
@@ -12,7 +12,7 @@
 		</nav>
 NAV;
 	}
-	elseif ($_SESSION['status']==1){
+	elseif ($_SESSION['status']==1){ //Om man är tilldelad status 1 ser menyn ut såhär
 			echo<<<NAV
 			<nav>
 				<ul>
@@ -26,7 +26,7 @@ NAV;
 			
 		}
 		
-	elseif($_SESSION['status']==2){
+	elseif($_SESSION['status']==2){//Om man är tilldelad status 2 ser menyn ut såhär
 			echo<<<NAV
 			<nav>
 				<ul>

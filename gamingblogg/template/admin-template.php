@@ -5,10 +5,10 @@ $anvnamn = $_SESSION['anvnamn'];
 
 $sql="SELECT * FROM anvandare WHERE anvnamn=?" ;
 
-$res=$dbh->prepare($sql);
+$res=$dbh->prepare($sql); // förbereder för ett "statment"
 	$res->bind_param("s",$anvnamn);
 	$res->execute();
-	$result=$res->get_result();
+	$result=$res->get_result(); // ger ett resultat från ett förbereda statment
 	//$row=$result->fetch_assoc();
 ?>
 

@@ -3,14 +3,14 @@ $str="";
 
 	if (isset($_GET['anvnamn'])) {
 			$usr=$_GET['anvnamn'];
-			$str="Användarnamnet $usr upptaget";
+			$str="Användarnamnet $usr upptaget"; // om användarnamnet e taget
 		}
 		elseif(isset($_GET['email'])) {
 				$ma=$_GET['email'];
-				$str="Mailadressen $ma är upptagen";
+				$str="Mailadressen $ma är upptagen"; // kollar om mailen är tagen
 		}
 		
-	if(!empty($_POST['email'])&&!empty($_POST['username'])&& !empty($_POST['password'])) 
+	if(!empty($_POST['email'])&&!empty($_POST['username'])&& !empty($_POST['password'])) // om dem är tillgängliga gör ->
 	{
 		
 		$email = filter_input(INPUT_POST,'email', FILTER_SANITIZE_EMAIL, FILTER_FLAG_STRIP_LOW);
@@ -48,7 +48,7 @@ $str="";
 			
 			$sql = "INSERT INTO anvandare (anvnamn, epost, losenord, status) VALUE (?,?,?,?)";
 			$res=$dbh->prepare($sql);
-			$res->bind_param("sssi",$anvnamn,$email, $password, $status);
+			$res->bind_param("sssi",$anvnamn,$email, $password, $status); //binder variablar till förberedda statments.
 			$res->execute();
 			$str="Användaren tillagd";
 		}

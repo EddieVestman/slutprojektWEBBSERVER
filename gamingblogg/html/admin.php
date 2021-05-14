@@ -1,4 +1,5 @@
 <?php 
 	session_start();
-	require "../template/admin-template.php";
+	require "../template/admin-template.php";  //page controller
 ?>	
+

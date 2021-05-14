@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Värd: 127.0.0.1
--- Tid vid skapande: 11 maj 2021 kl 14:34
--- Serverversion: 10.4.6-MariaDB
--- PHP-version: 7.3.8
+-- Tid vid skapande: 14 maj 2021 kl 18:50
+-- Serverversion: 10.4.19-MariaDB
+-- PHP-version: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -44,7 +43,30 @@ INSERT INTO `anvandare` (`anvnamn`, `epost`, `losenord`, `status`) VALUES
 ('eeddde', 'eddie123@gmail.com', '$2y$10$lkVMxXi66qKFT9cTRo8mlOFG.jXB36TREyC09JzseIQWpExIUUMXy', 1),
 ('elias', 'elias@gmail.com', '$2y$10$bnNJka57OT3UK2CGHD6AAO/I9K2MikYxrq3DEdWRXp91JGOhNNlDK', 1),
 ('gabbbbe', 'gabbe@gmail.com', '$2y$10$FpOKlBipF4iWshMCrobMX.cI7LaV7cUot.BE.JcWl79vtRye/oCce', 1),
+('porny', 'porny@gmail.com', '$2y$10$EXW6vgBDNF1SP/9D6P152.2VDJO88KzyvqKUObyqV5vfIBjEfrlF6', 1),
 ('tjorven', 'tjorven@gmail.com', '$2y$10$NSMONqoxd7wI5/FmQcDC/ep4RHt8j7A6c/5VyMAZA0W7IiGmRjrqW', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `inlagg`
+--
+
+CREATE TABLE `inlagg` (
+  `anv` varchar(20) COLLATE utf8mb4_swedish_ci NOT NULL,
+  `rubrik` varchar(20) COLLATE utf8mb4_swedish_ci NOT NULL,
+  `beskrivning` varchar(700) COLLATE utf8mb4_swedish_ci NOT NULL,
+  `ID` int(80) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_swedish_ci;
+
+--
+-- Dumpning av Data i tabell `inlagg`
+--
+
+INSERT INTO `inlagg` (`anv`, `rubrik`, `beskrivning`, `ID`) VALUES
+('porny', 'Hej ', 'Tjena tjena', 4),
+('Eddie', 'Hej ', 'Hejsan porny', 5),
+('Eddie', 'fff', 'ffff', 7);
 
 --
 -- Index för dumpade tabeller
@@ -58,6 +80,24 @@ ALTER TABLE `anvandare`
   ADD UNIQUE KEY `epost` (`epost`),
   ADD UNIQUE KEY `anvnamn` (`anvnamn`),
   ADD KEY `Lösenord` (`losenord`);
+
+--
+-- Index för tabell `inlagg`
+--
+ALTER TABLE `inlagg`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `ID` (`ID`),
+  ADD KEY `anv` (`anv`);
+
+--
+-- AUTO_INCREMENT för dumpade tabeller
+--
+
+--
+-- AUTO_INCREMENT för tabell `inlagg`
+--
+ALTER TABLE `inlagg`
+  MODIFY `ID` int(80) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

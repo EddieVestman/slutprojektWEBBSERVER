@@ -13,7 +13,7 @@
 		
       </header>
       <?php 
-				require "menu.php";
+				require "menu.php"; // Precis som en include men ifall den inte lyckas få med menu.php kommer det ett error.
 			
 		?>
       
