@@ -31,8 +31,12 @@ Vestibulum mi est, varius ut mi nec, bibendum suscipit urna. Nulla viverra portt
 			
 			</main>
 			
-			
-			
+			<div>	
+			<a href="create-template.php">Skapa inlägg</a>
+
+			</div>
+							
+						
 			
 			
 		</div>
